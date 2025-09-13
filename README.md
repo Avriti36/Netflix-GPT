@@ -73,6 +73,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - create react app
   -tailwind setup
+  -Header
+  -Routing app
+  -Login Form
+  -Signup Form
+  -form Validation
+  -useRef Hook
+  -firebase setup and deployment
+  -implement signin user API
+  -created reduxstore with userSlice
+  -implemented Sign out
+  -fetch from tmbd movies api
+  -bugfix: signup profile pic change and displayName
+  -bugfix: if user not logged in, it won't permit to access browse instead redirect to login and vice versa for loggedin user
+  -unsubscribe to onauthchange callback
+  -fetching tmdb api ,accessing the mmovies using access token
+  -get data from tmdb nowplayingmovie
+  - updated the store with movie data
+    -create movie slice
+    -planning for browse page maincontainer , secondarycontainer
+    -updated the store with movie and trailer
+    -embedded the youtube video with autoplay and mute
+    -Tailwind on the browse page
 
 # Features
 
