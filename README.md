@@ -95,6 +95,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     -updated the store with movie and trailer
     -embedded the youtube video with autoplay and mute
     -Tailwind on the browse page
+    -built secondary component
+    -built Movie List
+    -built Movie Card
+    -TMDB imageCDN url
+    -browse page
+    -usePopularMovies hook
 
 # Features
 
@@ -105,7 +111,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -login form
 
 -browse
-(AFTER AUTHENTOICATION)
+(AFTER AUTHENTICATION)
 -header
 -main movie
 -trailer in bg - title and description
