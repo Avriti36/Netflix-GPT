@@ -16,7 +16,7 @@ const useNowPlayingMovies=()=>{
             return;
           }
           const json=await response.json();
-          console.log("TMDB now_playing results:", json?.results);
+           
           dispatch(addNowPlayingMovies(Array.isArray(json?.results) ? json.results : []))
         } catch (error) {
           console.error("TMDB now_playing network/error:", error);

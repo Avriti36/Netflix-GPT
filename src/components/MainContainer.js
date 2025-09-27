@@ -8,8 +8,7 @@ const movies=useSelector(store=>store.movies?.nowPlayingMovies)
 if(!movies || movies.length===0) return
 const mainMovie=movies[0]
 const {original_title,overview}=mainMovie
-
-console.log("Movies in store:", mainMovie);
+ 
   return (
     <div>
         <VideoTitle title={mainMovie.original_title} overview={mainMovie.overview} />

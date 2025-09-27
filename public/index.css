@@ -1,0 +1,5 @@
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Optional: prevent page-level bottom scrollbar if something overflows */
+html, body { overflow-x: hidden; }

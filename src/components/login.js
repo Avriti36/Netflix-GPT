@@ -7,6 +7,7 @@ import{useNavigate} from 'react-router-dom';
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser} from '../utils/userSlice'; 
+import { BG_URL } from '../utils/constant';
 
  const Login = () => {
     const [isSignIn,setToisSignIn]=useState(true);
@@ -49,7 +50,7 @@ updateProfile(user, {
 }).catch((error) => {
 seterrorMessage(error.message)
 });
-   console.log(user)
+   
      navigate('/browse')
   })
   .catch((error) => {
@@ -66,7 +67,7 @@ setName(errorCode+errorMessage)
     signInWithEmailAndPassword(auth, email.current.value,password.current.value)
   .then((userCredential) => {
     const user = userCredential.user;
-    console.log(user)
+     
       navigate('/browse')
   })
   .catch((error) => {
@@ -83,7 +84,7 @@ setName(errorCode+errorMessage)
      <div className='relative '>
         <Header/>
    <div className='absolute'>
-       <img src="https://assets.nflxext.com/ffe/siteui/vlv3/258d0f77-2241-4282-b613-8354a7675d1a/web/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg" alt="bg" />
+       <img src={BG_URL} alt="bg" />
 
     </div>
     <form onSubmit={(e)=>e.preventDefault()} className='w-3/12 absolute p-12 bg-black bg-opacity-80 my-36 mx-auto right-0 left-0 text-white  ' action="">

@@ -101,6 +101,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     -TMDB imageCDN url
     -browse page
     -usePopularMovies hook
+    -GPT Search feature
+    -GPT Search Bar
+    -Multi Language Feature(en, hindi ,japanese)
+    -integrate GPT api
 
 # Features
 
