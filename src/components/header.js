@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { auth } from '../utils/firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
  
@@ -16,7 +16,7 @@ const Header = () => {
    const user=useSelector(store =>store.user)
     const dispatch = useDispatch(); 
     const navigate=useNavigate();
-    const showGptSearch=useSelector((store)=store.gpt.showGptSearch)
+    const showGptSearch=useSelector((store)=>store.gpt.showGptSearch)
 
        const handleGPTSearch=()=>{
       dispatch(togglegptSearchView())
