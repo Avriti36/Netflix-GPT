@@ -9,7 +9,7 @@ export const API_options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZGY0NzQ1ZjhiNzI5ODdjMjE3MmRkZTg5NGEwNGE1YSIsIm5iZiI6MTc1NzcwNTUxNy40MDEsInN1YiI6IjY4YzQ3NTJkZmM5YmQ0MDBjNWNkZDIwYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zr-oyKGLx27WtdMN9G3-kkPgcwynnQ3oBxRAXly-jV4'
+    Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY ,
   }
 };
 
@@ -35,6 +35,8 @@ const Button = ({children, className, ...rest}) => {
     </StyledWrapper>
   );
 }
+
+export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY
 
 const StyledWrapper = styled.div`
   .btn {

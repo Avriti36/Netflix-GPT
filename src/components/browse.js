@@ -8,6 +8,8 @@ import useTopTrends from '../hooks/useTopTrends'
 import useUpcoming from '../hooks/useUpcoming'
 import GPTSearch from './GPTSearch'
 import { useSelector } from 'react-redux'
+import Footer from './Footer'
+
   
 const Browse = () => {
 
@@ -22,7 +24,8 @@ useUpcoming()
     <div>
       <Header/>
        {showGptSearch?( <GPTSearch/>): (<> <MainContainer/>
-      <SecondaryContainer/></>)} 
+      <SecondaryContainer/></>)}
+      <Footer/> 
       
       
 

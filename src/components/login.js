@@ -41,7 +41,7 @@ if(!isSignIn){
   const user = userCredential.user;
   
 updateProfile(user, {
-  displayName: name.current.value, photoURL: "https://th.bing.com/th/id/R.9ff2f1f826ec21b3573c86a490d8d624?rik=5zTDR%2bHu4KKTdQ&riu=http%3a%2f%2fi0.kym-cdn.com%2fphotos%2fimages%2ffacebook%2f000%2f892%2f608%2ffb9.jpg&ehk=c%2fmJShQGkLSdnBLjUdyNBaly5Osu0UWiMZ6gKgfehuo%3d&risl=&pid=ImgRaw&r=0"
+  displayName: name.current.value, photoURL: "https://i.pinimg.com/736x/f5/68/04/f56804886125925b781864924c8c8ddc.jpg"
 }).then(() => {
    const {uid, email, displayName,photoURL} = auth.currentUser;
       dispatch(addUser({uid:uid, email: email, displayName: displayName, photoURL: photoURL}))
@@ -81,13 +81,13 @@ setName(errorCode+errorMessage)
 }
 }
    return (
-     <div className='relative '>
+     <div className='relative min-h-screen w-full'>
         <Header/>
-   <div className='absolute'>
-       <img src={BG_URL} alt="bg" />
-
-    </div>
-    <form onSubmit={(e)=>e.preventDefault()} className='w-3/12 absolute p-12 bg-black bg-opacity-80 my-36 mx-auto right-0 left-0 text-white  ' action="">
+        <div className='absolute inset-0 -z-10'>
+          <img className='h-full w-full object-cover' src={BG_URL} alt="bg" />
+          <div className='absolute inset-0 bg-black/30' />
+        </div>
+    <form onSubmit={(e)=>e.preventDefault()} className='w-full md:w-3/12 absolute p-12 bg-black bg-opacity-80 my-36 mx-auto right-0 left-0 text-white  ' action="">
     <h1 className='font-bold text-3xl text-white py-3'>{isSignIn? "Sign In":"Sign Up"}</h1>
         { !isSignIn &&    <input ref={name} type="text" placeholder='Name' className='bg-zinc-900/70 border border-white-600 p-4 my-2 w-full rounded-md  '/>}
         

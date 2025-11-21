@@ -104,7 +104,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     -GPT Search feature
     -GPT Search Bar
     -Multi Language Feature(en, hindi ,japanese)
-    -integrate GPT api
+    -integrate gemini api,
+    -memoisation
+    -fetched movie suggestion from tmdb
+    -created gpt slice and added data
+    -reused movieList componnent to make movei suggestion container
+    -added .env file
+    -made site responsive
 
 # Features
 
