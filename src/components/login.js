@@ -15,6 +15,7 @@ import { BG_URL } from '../utils/constant';
     const navigate=useNavigate(); 
     const dispatch=useDispatch();
     const [Name,setName]=useState(null)
+   const [showPassword,setShowPassword]=useState(false)
     
     const ToggleSignIinForm=()=>{
         setToisSignIn(!isSignIn)
@@ -24,6 +25,10 @@ import { BG_URL } from '../utils/constant';
 const email=useRef(null);
 const password=useRef(null);
 const name=useRef(null);
+
+const togglePasswordVisibility = () => {
+  setShowPassword((prev) => !prev)
+}
 
 
     const handleButtonClick=()=>{
@@ -93,8 +98,21 @@ setName(errorCode+errorMessage)
         
      
         <input ref={email} type="text" placeholder='Email' className='bg-zinc-900/70 border border-white-600 p-4 my-2 w-full rounded-md '/>
-       
-        <input ref={password} type="password" placeholder='Password' className='bg-zinc-900/70 border border-white-600 p-4 my-2 w-full rounded-md  '/>
+        <div className='relative'>
+          <input
+            ref={password}
+            type={showPassword ? 'text' : 'password'}
+            placeholder='Password'
+            className='bg-zinc-900/70 border border-white-600 p-4 my-2 w-full rounded-md pr-20'
+          />
+          <button
+            type='button'
+            onClick={togglePasswordVisibility}
+            className='absolute inset-y-0 right-3 my-2 text-sm text-zinc-800 hover:text-zinc-600'
+          >
+            {showPassword ? 'Hide' : 'Show'}
+          </button>
+        </div>
      <p className='text-red-500 font-bold text-sm'>{errorMessage}</p>
         <button className='bg-red-500 w-full p-4 m-4 mx-0 rounded-md' onClick={handleButtonClick}>{isSignIn? "Sign In":"Sign Up"}</button>
       
