@@ -1,5 +1,6 @@
 
 # Netflix GPT
+<img width="1905" height="888" alt="Screenshot 2025-11-21 171612" src="https://github.com/user-attachments/assets/9e0169ee-117f-435d-a544-feac558103d9" />
 
 ## Project Setup & Development
 
