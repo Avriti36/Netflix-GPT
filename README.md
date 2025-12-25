@@ -68,66 +68,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
 # Netflix GPT
 
-- create react app
-  -tailwind setup
-  -Header
-  -Routing app
-  -Login Form
-  -Signup Form
-  -form Validation
-  -useRef Hook
-  -firebase setup and deployment
-  -implement signin user API
-  -created reduxstore with userSlice
-  -implemented Sign out
-  -fetch from tmbd movies api
-  -bugfix: signup profile pic change and displayName
-  -bugfix: if user not logged in, it won't permit to access browse instead redirect to login and vice versa for loggedin user
-  -unsubscribe to onauthchange callback
-  -fetching tmdb api ,accessing the mmovies using access token
-  -get data from tmdb nowplayingmovie
-  - updated the store with movie data
-    -create movie slice
-    -planning for browse page maincontainer , secondarycontainer
-    -updated the store with movie and trailer
-    -embedded the youtube video with autoplay and mute
-    -Tailwind on the browse page
-    -built secondary component
-    -built Movie List
-    -built Movie Card
-    -TMDB imageCDN url
-    -browse page
-    -usePopularMovies hook
-    -GPT Search feature
-    -GPT Search Bar
-    -Multi Language Feature(en, hindi ,japanese)
-    -integrate gemini api,
-    -memoisation
-    -fetched movie suggestion from tmdb
-    -created gpt slice and added data
-    -reused movieList componnent to make movei suggestion container
-    -added .env file
-    -made site responsive
+## Project Setup & Development
+
+- Created React app
+- Configured Tailwind CSS
+- Built Header component
+- Implemented routing
+- Built Login form
+- Built Signup form
+- Added form validation
+- Used useRef hook
+- Firebase setup and deployment
+- Implemented Sign-in user API
+- Created Redux store with userSlice
+- Implemented Sign-out functionality
+- Bug fix: signup profile picture update and displayName
+- Bug fix: unauthorized users redirected to login page
+- Bug fix: logged-in users redirected from login to browse
+- Unsubscribed from onAuthStateChanged callback
+
+## Movies & Data Handling
+
+- Fetched data from TMDB Movies API
+- Used TMDB access token for secure requests
+- Retrieved now playing movies
+- Stored movie data in Redux store
+- Created movieSlice
+- Planned browse page structure
+- Built MainContainer and SecondaryContainer
+- Updated store with movie and trailer data
+- Embedded YouTube trailer with autoplay and mute
+- Applied Tailwind styling on browse page
+- Built secondary components
+- Built MovieList component
+- Built MovieCard component
+- Used TMDB Image CDN URL
+
+## Custom Hooks & Optimization
+
+- Created usePopularMovies hook
+- Implemented memoization for performance
+- Added responsive design support
+
+## GPT Features
+
+- Built GPT Search feature
+- Created GPT Search Bar
+- Added multi-language support
+- Supported languages: English, Hindi, Japanese
+- Integrated Gemini API
+- Fetched GPT-based movie suggestions from TMDB
+- Created gptSlice and stored GPT results
+- Reused MovieList component for GPT movie suggestions
+- Added environment variables using .env file
+
+---
 
 # Features
 
--login/signup
--Signin / Signup Form
--redirect to browse page
--header
--login form
+## Authentication
 
--browse
-(AFTER AUTHENTICATION)
--header
--main movie
--trailer in bg - title and description
--movie suggestions
--movie list \*n
+- Login
+- Signup
+- Sign-in / Sign-up forms
+- Redirect to browse page after authentication
+- Secure header navigation
 
--Neflix Gpt
--Search bar
--Movie Suggestions
+## Browse Page (After Authentication)
+
+- Header
+- Main movie display
+- Background trailer with title and description
+- Movie suggestions
+- Multiple movie lists
+
+## Netflix GPT
+
+- GPT-powered search bar
+- AI-based movie recommendations
