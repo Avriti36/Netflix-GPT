@@ -114,9 +114,9 @@ setName(errorCode+errorMessage)
           </button>
         </div>
      <p className='text-red-500 font-bold text-sm'>{errorMessage}</p>
-        <button className='bg-red-500 w-full p-4 m-4 mx-0 rounded-md' onClick={handleButtonClick}>{isSignIn? "Sign In":"Sign Up"}</button>
+        <button className='bg-red-500 hover:bg-red-600 w-full p-4 m-4 mx-0 rounded-md' onClick={handleButtonClick}>{isSignIn? "Sign In":"Sign Up"}</button>
       
-        <p className='p-3 m-0' onClick={ToggleSignIinForm}>{isSignIn?" New to Netflix, Sign up now": "Already registred, Sign Up now !"}</p>
+        <p className='p-3 m-0 ' onClick={ToggleSignIinForm}>{isSignIn?" New to Netflix, Sign up now": "Already registred, Sign Up now !"}</p>
     </form>
     </div>
    )
