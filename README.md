@@ -1,15 +1,15 @@
 
 # Netflix GPT
-<img width="1905" height="888" alt="Screenshot 2025-11-21 171612" src="https://github.com/user-attachments/assets/9e0169ee-117f-435d-a544-feac558103d9" />
+<img width="1905" height="888" alt="login" src="https://github.com/user-attachments/assets/9e0169ee-117f-435d-a544-feac558103d9" />
+<br></br>
 
-<img width="1917" height="879" alt="Screenshot 2026-01-10 225854" src="https://github.com/user-attachments/assets/7213e578-1ba9-4397-abb6-877c4c03821a" />
-<img width="1914" height="877" alt="Screenshot 2026-01-10 225919" src="https://github.com/user-attachments/assets/2cbd810b-96c3-4474-afe6-9be5036958f9" />
+<img width="1917" height="879" alt="login credential" src="https://github.com/user-attachments/assets/7213e578-1ba9-4397-abb6-877c4c03821a" />
+ <br></br>
+<img width="1914" height="846" alt="Homepage" src="https://github.com/user-attachments/assets/6b0aca94-c69b-4be4-86f3-a4b4ee913b39" /><br></br>
+<img width="1919" height="871" alt="AI Search" src="https://github.com/user-attachments/assets/65142fc0-b7e7-4a58-bdde-50deabc56d0f" /><br></br>
 
-<img width="1919" height="871" alt="Screenshot 2026-01-10 225952" src="https://github.com/user-attachments/assets/65142fc0-b7e7-4a58-bdde-50deabc56d0f" />
 
-
-## Project Setup & Development<img width="1914" height="877" alt="Screenshot 2026-01-10 225919" src="https://github.com/user-attachments/assets/c1a1a7d8-bf07-4ba6-8956-86b594b175bb" />
-
+## Project Setup & Development 
 - Created React app
 - Configured Tailwind CSS
 - Built Header component
